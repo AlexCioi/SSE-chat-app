@@ -3,3 +3,18 @@ services:
         resource: "%kernel.project_dir%/src/AppBundle/Controller/*"
         autowire: true
         autoconfigure: true
+
+    AppBundle\Form\:
+        resource: "%kernel.project_dir%/src/AppBundle/Form/*"
+        autowire: true
+        autoconfigure: true
+
+    AppBundle\Repository\:
+        resource: "%kernel.project_dir%/src/AppBundle/Repository/*"
+        autowire: true
+        autoconfigure: true
+
+    AppBundle\Services\:
+        resource: "%kernel.project_dir%/src/AppBundle/Services/*"
+        autowire: true
+        autoconfigure: true

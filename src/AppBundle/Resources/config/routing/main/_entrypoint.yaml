@@ -1,3 +1,15 @@
 app_main_import:
     resource: "@AppBundle/Resources/config/routing/main/main.yaml"
     prefix: /
+
+app_conversation_import:
+    resource: "@AppBundle/Resources/config/routing/main/conversation.yaml"
+    prefix: /
+
+app_conversation_member_import:
+    resource: "@AppBundle/Resources/config/routing/main/conversation_member.yaml"
+    prefix: /
+
+app_message_import:
+    resource: "@AppBundle/Resources/config/routing/main/message.yaml"
+    prefix: /

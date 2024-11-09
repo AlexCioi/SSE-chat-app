@@ -16,6 +16,9 @@ class Conversation
     #[ORM\Column]
     protected ?int $id = null;
 
+    #[ORM\Column(length: 255, nullable: false)]
+    protected ?string $title = null;
+
     #[ORM\OneToMany(targetEntity: Message::class, mappedBy: 'conversation')]
     protected ?Collection $messages;
 
@@ -53,6 +56,18 @@ class Conversation
     public function setMembers(?Collection $members): Conversation
     {
         $this->members = $members;
+
+        return $this;
+    }
+
+    public function getTitle(): ?string
+    {
+        return $this->title;
+    }
+
+    public function setTitle(?string $title): Conversation
+    {
+        $this->title = $title;
 
         return $this;
     }

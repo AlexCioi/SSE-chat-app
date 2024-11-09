@@ -1,0 +1,30 @@
+
+
+app_conversation_index:
+    path: /conversations/
+    controller: AppBundle\Controller\ConversationController::indexAction
+    methods: GET
+
+
+app_conversation_new:
+    path: /conversations/new
+    controller: AppBundle\Controller\ConversationController::newAction
+    methods: GET|POST
+
+
+app_conversation_show:
+    path: /conversations/{id}/show
+    controller: AppBundle\Controller\ConversationController::showAction
+    methods: GET
+
+
+app_conversation_edit:
+    path: /conversations/{id}/edit
+    controller: AppBundle\Controller\ConversationController::editAction
+    methods: GET|POST
+
+
+app_conversation_delete:
+    path: /conversations/{id}/delete
+    controller: AppBundle\Controller\ConversationController::deleteAction
+    methods: GET

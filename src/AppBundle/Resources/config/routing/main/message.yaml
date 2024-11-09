@@ -1,0 +1,4 @@
+app_message_new:
+    path: conversations/{conversationId}/message/new
+    controller: AppBundle\Controller\MessageController::newAction
+    methods: GET|POST

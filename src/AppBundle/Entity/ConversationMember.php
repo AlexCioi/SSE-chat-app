@@ -15,9 +15,6 @@ class ConversationMember
     #[ORM\Column]
     protected ?int $id = null;
 
-    #[ORM\Column(name: "conversation_name", length: 255, nullable: false)]
-    protected ?string $conversationName = null;
-
     #[ORM\ManyToOne(targetEntity: Conversation::class, inversedBy: 'members')]
     #[ORM\JoinColumn(nullable: false)]
     protected ?Conversation $conversation = null;
@@ -66,18 +63,6 @@ class ConversationMember
     public function setNickname(?string $nickname): ConversationMember
     {
         $this->nickname = $nickname;
-
-        return $this;
-    }
-
-    public function getConversationName(): ?string
-    {
-        return $this->conversationName;
-    }
-
-    public function setConversationName(?string $conversationName): ConversationMember
-    {
-        $this->conversationName = $conversationName;
 
         return $this;
     }

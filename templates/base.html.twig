@@ -17,6 +17,11 @@
 {#        {% endblock %}#}
     </head>
     <body>
+        <script>
+            // to prevent Firefox FOUC, this must be here
+            let Firefox_FOUC_FIX;
+        </script>
+
         <div id="app">
             {% block body %}{% endblock %}
         </div>

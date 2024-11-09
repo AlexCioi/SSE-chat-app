@@ -17,10 +17,10 @@ class Message
     #[ORM\Column]
     protected ?int $id = null;
 
-    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
+    #[ORM\Column(name: "created_at", type: Types::DATETIME_MUTABLE)]
     protected \DateTime $createdAt;
 
-    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
+    #[ORM\Column(name: "updated_at", type: Types::DATETIME_MUTABLE)]
     protected \DateTime $updatedAt;
 
     #[ORM\Column(type: Types::TEXT, length: 1024, nullable: false)]
