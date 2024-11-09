@@ -1,0 +1,2 @@
+main_user_import:
+    resource: "@UserBundle/Resources/config/routing/main/user.yaml"

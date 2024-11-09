@@ -1,0 +1,3 @@
+main_user_entrypoint:
+    resource: '@UserBundle/Resources/config/routing/main/_entrypoint.yaml'
+    prefix: /

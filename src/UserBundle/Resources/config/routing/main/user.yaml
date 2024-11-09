@@ -1,0 +1,11 @@
+user_user_login:
+    path: /login
+    controller: UserBundle\Controller\SecurityController::login
+
+user_user_logout:
+    path: /logout
+    controller: UserBundle\Controller\SecurityController::logout
+
+user_user_register:
+    path: /register
+    controller: UserBundle\Controller\RegistrationController::register
